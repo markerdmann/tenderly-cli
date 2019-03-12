@@ -2,9 +2,9 @@ const HDWalletProvider = require('truffle-hdwallet-provider-privkey');
 
 module.exports = {
     networks: {
-        tenderly: {
+        development: {
             provider: function() {
-                return new HDWalletProvider(["24c6587bde13b53654e689d9918d3391b832d5f88741b59166dc978b73557a85"], `http://127.0.0.1:9545`);
+                return new HDWalletProvider(["9842d144766e11acc647aba55da339197ca6bc8f6e0e263b2d8328c48a7705a4"], `http://127.0.0.1:9545`);
             },
             network_id: '5777',
             gasPrice: 2000000000 // 2 GWei
